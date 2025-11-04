@@ -1,4 +1,4 @@
-# CALM Template Repository
+# Optimising quantitative methods to assess the efficacy of clearing protocols for light-sheet microscopy - Jupyter Notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/FrancisCrickInstitute/CALM_Template/HEAD?labpath=blob%2Fmain%2Fsegment_image.ipynb)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3115/)
@@ -6,62 +6,31 @@
 ![GitHub](https://img.shields.io/github/license/FrancisCrickInstitute/CALM_Template?color=green&style=plastic)
 
 ## Overview
+This code is written for the 2025 Crick BioImage Analsyis Symposium (CBIAS) as a method of data analysis for the poster **'Optimising quantitative methods to assess the efficacy of clearing protocols for light-sheet microscopy'**. In this code, our aim is to provide a quick, user-friendly pipeline to assess clearing efficacy of a 3-dimensional sample using simple statistical parameters, broadening scientific communication and easing access for those without computational expertise.
 
-The CALM Template is designed to provide a starting point for researchers to publish and share their image analysis code effectively. This might include, but is not limited to...
-* ImageJ/FIJI Macros
-* CellProfiler pipelines
-* ilastik projects
-* Jupyter notebooks
-* Python scripts
-* MATLAB scripts
 
-### Why?
 
-* It is often the case that publishing code is left until the last minute when a paper is being submitted, which results in published code that is in no way reusable.
-* If the code is not reusable and cannot be run by anyone other than you, then nobody is going to be able to reproduce your published results!
-* So, put as much time and effort into publishing your code as you do into writing the methods section of your paper.
 
-### What Should You Include?
+## Content
+This repo contains 2 Jupyter Notebooks:
 
-When publishing image analysis protocols, we recommend following the guidance in the following article:
+- `pixel_intensity_measurement.ipynb`: a Notebook which imports an image and measures the properties of the image to assess clearing efficacy, and saves this data to a `.csv` file.
+- `combine_csv.ipynb`: a Notebook which combines several of these `.csv` files to combine data and visualise your data into a lineplot to compare/contrast, which can then be saved and used.
 
-> Schmied, C., Nelson, M.S., Avilov, S. et al. Community-developed checklists for publishing images and image analyses. _Nat Methods_ (2023). https://doi.org/10.1038/s41592-023-01987-9
+This repo will also have example data (`test_image.tif`), on which these notebooks can be used and tested for modifications. 
 
-But at the absolute minimum, your repository should include the following:
-* All required code
-  * Ideally, this should be structured in a logical fashion using directories and sub-directories as necessary.
-* Instructions on how to run your code
-  * This is crucial - do not assume that anyone will be able to figure out what your code does! Provide basic, step-by-step instructions on how to run your code, including any prerequisites that need to be installed.
-* Test Data
-  * Your repository should contain some test data that anyone can run your code on to verify that it is performing as it should be. You should also provide the corresponding output data to validate the code.
 
-## Getting Started
+## Contact info
 
-### Requirements
+If you have any questions regarding this work or any suggestions, please feel free to reach out:
 
-In order to create your own repository from this template, you will need:
-* A GitHub account.
-* Basic knowledge of git operations.
-* Membership of the [Francis Crick Insitute organisation on Github](https://github.com/FrancisCrickInstitute).
+>Deniz Bekat - *deniz.bekat@crick.ac.uk*
 
-### How to Make Use of this Template
+>Alessandro Ciccarelli - *alessandro.ciccarelli@crick.ac.uk*
 
-Once all of the above requirements are met, you can create your own repository using this repo as a template. To do so...
-
-1. Click on `+` dropdown menu on the top-right of this screen and select `New repository`:
-
-![Screenshot](./resources/New_Repo.png)
-
-2. Then, select `FrancisCrickInstitute/CALM_Template` from the list of options that should appear when you click on the `Repository template` dropdown:
-
-![Screenshot](./resources/Select_Template_Screenshot.png)
-
-3. Complete the rest of the details and you should end up with a new repository that looks just like this one, which you can edit according to your needs.
+>David Barry - *david.barry@crick.ac.uk*
 
 ## How To Run the Code in This Repo
-
-* This repository is intended only as a demo and to provide rough guidelines on how you should publish your own code.
-* The main functional element here is a single, relatively sumple Jupyter Notebook - if you are publishing a FIJI macro or a MATLAB script, then your repository will look a little different, but the basic principles outlined above remain the same.
 
 A step-by-step guide is presented below. **You only need to perform steps 1 and 2 once.** Every subsequent time you want to run the code, skip straight to step 3.
 
@@ -76,7 +45,7 @@ We recommend using conda as it's relatively straightforward and makes the manage
 Once conda is installed, open a terminal (Mac) or command line (Windows) and run the following series of commands:
 
 ```
-conda create --name calm_template pip
+conda create --name calm_env pip python=3.11.9
 conda activate calm_template
 python -m pip install -r <path to this repo>/requirements.txt
 ```
@@ -96,8 +65,8 @@ You have successfully set up an environment!
 
 The following commands will launch a Jupyter notebook:
 ```
-conda activate calm_template
-jupyter notebook <path to this repo>/zebrafish_age_estimator.ipynb
+conda activate calm_env
+jupyter notebook <path to this repo>/pixel_intensity_measurement.ipynb
 ```
 
 The Jupyter Notebook should open in your browser - follow the step-by-step instructions in the notebook to run the code. If you are not familiar with Jupyter Notebooks, you can find a detailed introduction [here](https://jupyter-notebook.readthedocs.io/en/latest/notebook.html#introduction).
