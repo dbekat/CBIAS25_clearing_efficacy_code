@@ -8,7 +8,7 @@
 ## Overview
 This code is written for the 2025 Crick BioImage Analsyis Symposium (CBIAS) as a method of data analysis for the poster **'Optimising quantitative methods to assess the efficacy of clearing protocols for light-sheet microscopy'**. In this code, our aim is to provide a quick, user-friendly pipeline to assess clearing efficacy of a 3-dimensional sample using simple statistical parameters, broadening scientific communication and easing access for those without computational expertise.
 
-
+![screenshot](https://github.com/dbekat/CBIAS25_clearing_efficacy_code/blob/resource_add/resources/CBIAS%20Logo.png)
 
 
 ## Content
