@@ -17,4 +17,15 @@ This repo contains 2 Jupyter Notebooks:
 - `pixel_intensity_measurement.ipynb`: a Notebook which imports an image and measures the properties of the image to assess clearing efficacy, and saves this data to a `.csv` file.
 - `combine_csv.ipynb`: a Notebook which combines several of these `.csv` files to combine data and visualise your data into a lineplot to compare/contrast, which can then be saved and used.
 
-This repo will also have example data (`test_image.tif`)on which these notebooks can be used and tested for modifications. 
+This repo will also have example data (`test_image.tif`), on which these notebooks can be used and tested for modifications. 
+
+
+## Contact info
+
+If you have any questions regarding this work or any suggestions, please feel free to reach out:
+
+>Deniz Bekat - *deniz.bekat@crick.ac.uk*
+
+>Alessandro Ciccarelli - *alessandro.ciccarelli@crick.ac.uk*
+
+>David Barry - *david.barry@crick.ac.uk*
