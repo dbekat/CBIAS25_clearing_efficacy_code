@@ -29,3 +29,49 @@ If you have any questions regarding this work or any suggestions, please feel fr
 >Alessandro Ciccarelli - *alessandro.ciccarelli@crick.ac.uk*
 
 >David Barry - *david.barry@crick.ac.uk*
+
+## How To Run the Code in This Repo
+
+A step-by-step guide is presented below. **You only need to perform steps 1 and 2 once.** Every subsequent time you want to run the code, skip straight to step 3.
+
+### Step 1
+#### Install a Python Distribution
+
+We recommend using conda as it's relatively straightforward and makes the management of different Python environments simple. You can install conda from [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) (miniconda will suffice).
+
+### Step 2
+#### Set Up Environment
+
+Once conda is installed, open a terminal (Mac) or command line (Windows) and run the following series of commands:
+
+```
+conda create --name calm_env pip python=3.11.9
+conda activate calm_template
+python -m pip install -r <path to this repo>/requirements.txt
+```
+where you need to replace `<path to this repo>` with the location on your file system where you downloaded this repo. You will be presented with a list of packages to be downloaded and installed. The following prompt will appear:
+```
+Proceed ([y]/n)?
+```
+Hit Enter and all necessary packages will be downloaded and installed - this may take some time. When complete, you can deactivate the environment you have created with the following command.
+
+```
+conda deactivate
+```
+You have successfully set up an environment!
+
+### Step 3
+#### Open the notebook
+
+The following commands will launch a Jupyter notebook:
+```
+conda activate calm_env
+jupyter notebook <path to this repo>/pixel_intensity_measurement.ipynb
+```
+
+The Jupyter Notebook should open in your browser - follow the step-by-step instructions in the notebook to run the code. If you are not familiar with Jupyter Notebooks, you can find a detailed introduction [here](https://jupyter-notebook.readthedocs.io/en/latest/notebook.html#introduction).
+
+### (Optional) Step 4
+#### Set up your repo to run on Binder
+
+[Binder](https://mybinder.org/) is a really nice way to allow people to run your Jupyter notebooks directly from GitHub - just [follow this handy guide from the Turing Institute](https://the-turing-way.netlify.app/communication/binder/zero-to-binder.html) to get your repo set up. To run the code in this template repo on Binder, click [here](https://mybinder.org/v2/gh/FrancisCrickInstitute/CALM_Template/HEAD?labpath=blob%2Fmain%2Fsegment_image.ipynb).
