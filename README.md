@@ -9,10 +9,11 @@
 This code is written for as a method of data analysis for the poster **'Quantitative Assessment of Clearing Protocol Efficacy for Multi-Dimensional Microscopy'**. In this code, our aim is to provide a quick, user-friendly pipeline to assess clearing efficacy of a 3-dimensional sample using simple statistical parameters, broadening scientific communication and easing access for those without computational expertise.
 
 ## Content
-This repo contains 2 Jupyter Notebooks:
+This repo contains 3 Jupyter Notebooks:
 
 - `pixel_intensity_measurement.ipynb`: a Notebook which imports an image and measures the properties of the image to assess clearing efficacy, and saves this data to a `.csv` file.
 - `combine_csv.ipynb`: a Notebook which combines several of these `.csv` files to combine data and visualise your data into a lineplot to compare/contrast, which can then be saved and used.
+- `cell_counting.ipynb`: a notebook that uses `Cellpose` to count cells per slice, allowing a comparison of different clearing protocols' ability to acquire relevant information about a sample
 
 This repo will also have example data (`test_image.tif`), on which these notebooks can be used and tested for modifications. 
 
