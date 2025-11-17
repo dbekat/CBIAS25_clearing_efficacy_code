@@ -1,4 +1,4 @@
-# Optimising quantitative methods to assess the efficacy of clearing protocols for light-sheet microscopy - Jupyter Notebooks
+# Quantitative Assessment of Clearing Protocol Efficacy for Multi-Dimensional Microscopy - Jupyter Notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/FrancisCrickInstitute/CALM_Template/HEAD?labpath=blob%2Fmain%2Fsegment_image.ipynb)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3115/)
@@ -6,7 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/FrancisCrickInstitute/CALM_Template?color=green&style=plastic)
 
 ## Overview
-This code is written for as a method of data analysis for the poster **'Optimising quantitative methods to assess the efficacy of clearing protocols for light-sheet microscopy'**. In this code, our aim is to provide a quick, user-friendly pipeline to assess clearing efficacy of a 3-dimensional sample using simple statistical parameters, broadening scientific communication and easing access for those without computational expertise.
+This code is written for as a method of data analysis for the poster **'Quantitative Assessment of Clearing Protocol Efficacy for Multi-Dimensional Microscopy'**. In this code, our aim is to provide a quick, user-friendly pipeline to assess clearing efficacy of a 3-dimensional sample using simple statistical parameters, broadening scientific communication and easing access for those without computational expertise.
 
 ## Content
 This repo contains 2 Jupyter Notebooks:
