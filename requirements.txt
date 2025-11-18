@@ -5,3 +5,4 @@ scikit-image
 seaborn
 napari
 pandas
+cellpose
