@@ -43,8 +43,8 @@ We recommend using conda as it's relatively straightforward and makes the manage
 Once conda is installed, open a terminal (Mac) or command line (Windows) and run the following series of commands:
 
 ```
-conda create --name calm_env pip python=3.11.9
-conda activate calm_template
+conda create --name env_name pip python=3.11.9
+conda activate env_name
 python -m pip install -r <path to this repo>/requirements.txt
 ```
 where you need to replace `<path to this repo>` with the location on your file system where you downloaded this repo. You will be presented with a list of packages to be downloaded and installed. The following prompt will appear:
